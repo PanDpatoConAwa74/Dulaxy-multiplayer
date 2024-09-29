@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Icon.png">
+    <link rel="stylesheet" href="cover.css">
+    <title>Dulaxy - Multiplayer</title>
+</head>
+<body>
+    <video autoplay muted id="background-video">
+        <source src="Welcome.mp4" type="video/mp4">
+    </video>
+
+    <div id="modal" class="modal-container">
+        <div class="modal-content">
+            <h2>Welcome to Dulaxy...</h2>
+            <input id="userName" class="user-data" placeholder="Enter your name">
+            <br><br>
+            <h3>Choose your role...</h3>
+
+            <div class="role-choice" onclick="selectRole('Astronaut')">
+                <img src="astronaut.jpg" alt="Astronaut">
+                <h4>Astronaut</h4>
+            </div>
+
+            <div class="role-choice" onclick="selectRole('Cosmo')">
+                <img src="Galaxy man.jpeg" alt="Cosmo">
+                <h4>Cosmo</h4>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="modal-funtionallity.js"></script>
+</html>
