@@ -6,5 +6,7 @@ window.onload = function() {
 document.addEventListener('click', function() {
     const modal = document.getElementById('modal');
     modal.style.display = 'flex';  
+
 });
+
 

@@ -34,7 +34,6 @@ body, html {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .modal-content h2, .modal-content h3, .modal-content h4 {
@@ -72,4 +71,64 @@ body, html {
 
 .hidden {
     display: none;
+}
+
+.btn {
+    text-decoration: none;
+    border-radius: 10px;
+    width: 80%;
+    height: 50px;
+    background-color: rgb(65, 17, 110);
+    box-shadow: 0 0 1px rgb(52, 17, 85), 
+                0 0 5px rgb(52, 17, 85), 
+                0 0 10px rgb(65, 20, 107);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px rgb(177, 14, 255), 
+                0 0 20px rgb(177, 14, 255), 
+                0 0 40px rgb(129, 24, 151), 
+                0 0 80px rgb(177, 14, 255), 
+                0 0 160px rgb(177, 14, 255);
+    transform: scale(1.05);
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    background: rgba(177, 14, 255, 0.3);
+    border-radius: 50%;
+    filter: blur(25px);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.btn:hover::before {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.user-info {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
 }

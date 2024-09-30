@@ -8,6 +8,7 @@
     <title>Dulaxy - Multiplayer</title>
 </head>
 <body>
+    <div id="userInfo" class="user-info" style="display: none;"></div>
     <video autoplay muted id="background-video">
         <source src="Welcome.mp4" type="video/mp4">
     </video>
@@ -19,17 +20,19 @@
             <br><br>
             <h3>Choose your role...</h3>
 
-            <div class="role-choice" onclick="selectRole('Astronaut')">
+            <div class="role-choice" id="role" onclick="selectRole('Astronaut')">
                 <img src="astronaut.jpg" alt="Astronaut">
                 <h4>Astronaut</h4>
             </div>
 
-            <div class="role-choice" onclick="selectRole('Cosmo')">
+            <div class="role-choice" id="role" onclick="selectRole('Cosmo')">
                 <img src="Galaxy man.jpeg" alt="Cosmo">
                 <h4>Cosmo</h4>
             </div>
+            <a href="astronaut/astronaut.html"><button class="btn">Landing</button></a>
         </div>
     </div>
 </body>
-<script src="modal-funtionallity.js"></script>
+<script src="modal-funtionality.js"></script>
+<script src="login(singleton).js"></script>
 </html>
